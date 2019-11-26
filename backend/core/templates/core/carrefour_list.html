@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+      <a href="/" class="navbar-brand">Voltar</a>
+      <form class="form-inline" action="list_carrefour" method="get">
+        <input class="form-control mr-sm-2" type="input" name="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+    <div class="container">
+        <div class="row">
+            {% for product in products %}
+                <div class="col card-item">
+                    <h6 class="name">{{ product.name }}</h6>
+                    <div class="image">
+                        <img src={{ product.img }} />
+                    </div>
+                    <span class="price">R$ {{ product.price }}</span>
+                    <span class="link">
+                         <a class="btn" href={{ product.url }} target="_blank">
+                            Conferir
+                        </a>
+                    </span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

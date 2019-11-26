@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.sherlock {
+  position: absolute;
+  /*z-index: -1;*/
+  margin-top: -265px;
+  width: 250px;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background: #6A1B9A !important;
+}
+
+.card-item {
+  background: #ffffff;
+  margin: 5px 10px;
+  height: 500px;
+}
+
+.name {
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
+  color: #6A1B9A;
+}
+.image {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+.price {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: #444444;
+}
+.link {
+  text-align: center;
+  display: block;
+}
+.link a {
+  background: #6A1B9A;
+  color: #ffffff;
+}
+
+.main {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+  background: #6A1B9A;
+}
+
+.main form legend {
+  z-index: 9999;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 59px;
+}
+
+.main form .inner-form .input-field input.placeholder {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.main form .inner-form .input-field input:-moz-placeholder {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.main form .inner-form .input-field input::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.main form .inner-form .input-field input:hover, .main form .inner-form .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.main form .inner-form .input-field .btn-search {
+  width: 70px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  align-items: center;
+}
+
+.main form .inner-form .input-field .btn-search svg {
+  fill: #ccc;
+  width: 30px;
+  height: 30px;
+  transition: all .2s ease-out, color .2s ease-out;
+}
+
+.main form .inner-form .input-field .btn-search:hover, .main form .inner-form .input-field .btn-search:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.main form .inner-form .input-field .btn-search:hover svg, .main form .inner-form .input-field .btn-search:focus svg {
+  fill: #666;
+}
+
+.main form .suggestion-wrap {
+  padding: 0 15px;
+}
+
+.main form .suggestion-wrap span {
+  font-size: 14px;
+  font-family: 'Helvetica', sans-serif;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0 15px;
+  line-height: 32px;
+  color: #fff;
+  border-radius: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.main form .inner-form {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.main form .inner-form .input-field {
+  height: 70px;
+  width: 100%;
+  position: relative;
+}
+
+.main form .inner-form .input-field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  background: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px 32px 10px 70px;
+  font-size: 18px;
+  color: #666;
+  border-radius: 34px;
+}
+
+
+
+.main form {
+  width: 100%;
+  max-width: 790px;
+}
